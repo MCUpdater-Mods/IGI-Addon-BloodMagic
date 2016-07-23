@@ -1,0 +1,16 @@
+[
+{
+  "modid": "IGI|BloodMagicIntegration",
+  "name": "InGameInfoXML Blood Magic Integration",
+  "description": "Adds tags for Blood Magic data",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["smbarbour"],
+  "credits": "WayOfTime for Blood Magic, and Lunatrius for InGameInfoXML",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
