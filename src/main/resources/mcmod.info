@@ -1,6 +1,6 @@
 [
 {
-  "modid": "IGI|BloodMagicIntegration",
+  "modid": "igi|bloodmagicintegration",
   "name": "InGameInfoXML Blood Magic Integration",
   "description": "Adds tags for Blood Magic data",
   "version": "${version}",
