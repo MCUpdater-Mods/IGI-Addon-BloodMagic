@@ -1,7 +1,7 @@
 package com.mcupdater.mods.igibloodmagic.network;
 
-import WayofTime.bloodmagic.api.saving.SoulNetwork;
-import WayofTime.bloodmagic.api.util.helper.NetworkHelper;
+import WayofTime.bloodmagic.core.data.SoulNetwork;
+import WayofTime.bloodmagic.util.helper.NetworkHelper;
 import com.mcupdater.mods.igibloodmagic.IGIBloodMagic;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -33,8 +33,8 @@ public class RemoteDataMessage implements IMessage {
 		@Override
 		public ResponseMessage onMessage(RemoteDataMessage message, MessageContext ctx) {
 			final NBTTagCompound data = new NBTTagCompound();
-			final EntityPlayerMP player = ctx.getServerHandler().playerEntity;
-			IThreadListener mainThread = (WorldServer) player.worldObj;
+			final EntityPlayerMP player = ctx.getServerHandler().player;
+			IThreadListener mainThread = (WorldServer) player.world;
 			mainThread.addScheduledTask(new Runnable() {
 				@Override
 				public void run() {

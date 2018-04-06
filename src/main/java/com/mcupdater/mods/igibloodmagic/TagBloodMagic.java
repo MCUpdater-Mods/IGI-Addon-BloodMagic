@@ -1,11 +1,9 @@
 package com.mcupdater.mods.igibloodmagic;
 
-import WayofTime.bloodmagic.api.util.helper.NetworkHelper;
+import WayofTime.bloodmagic.util.helper.NetworkHelper;
 import com.github.lunatrius.ingameinfo.tag.Tag;
 import com.github.lunatrius.ingameinfo.tag.registry.TagRegistry;
 import com.mcupdater.mods.igibloodmagic.network.RemoteDataMessage;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public abstract class TagBloodMagic extends Tag
 {
@@ -67,6 +65,6 @@ public abstract class TagBloodMagic extends Tag
 	}
 
 	public void log(Tag tag, Throwable ex) {
-		FMLCommonHandler.instance().getFMLLogger().warn(IGIBloodMagic.metadata.modId + ":" + tag.getName(), ex);
+		IGIBloodMagic.getLogger().warn(IGIBloodMagic.metadata.modId + ":" + tag.getName(), ex);
 	}
 }
